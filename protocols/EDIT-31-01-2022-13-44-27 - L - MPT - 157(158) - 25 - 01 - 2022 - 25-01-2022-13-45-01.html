@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css"  media="screen,projection,print"/>
+    <script src="../node_modules/chart.js/dist/chart.min.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+</head>
+<style>
+    @media print
+    {
+      .page-break  { display:block; page-break-before:always; }
+
+    }
+</style>
+<body>
+
+    <div class="container-sm">
+        <div class="row pt-4">
+            <div class="col-2">
+                <div class="text-center">
+                    <img src="../img/logo.png" alt="logo Skoda" width="50">
+                </div>
+            </div>
+            <div class="col-4 fs-6">
+                <p>Výroba kol MQ 100/200 - PKH/3</p>
+                <p>Mladá Boleslav</p>
+            </div>
+            <div class="col-3 fs-6 fw-bold">
+                <p>Protokol o zkoušce</p>
+                <p>Laborbericht Nr.</p>
+            </div>
+            <div class="col-3 fs-6 fw-bold">
+                <p>EDIT-31-01-2022-13-44-27 - L - MPT - 157(158) - 25 - 01 - 2022 - 25-01-2022-13-45-01</p>
+            </div>
+        </div>
+        <!-- User info data -->
+        <div class="row d-flex align-items-end">
+            <div class="col">
+                <div class="toast-header">
+                    <i class="bi-diamond-fill text-success" style="margin-right: 5px;"></i>
+                    <strong class="me-auto text-success">Vyhovuje</strong>
+                    Entspricht
+                </div>
+            </div>
+            <div class="col">
+                <div class="toast-header">
+                    <i class="bi-diamond-fill text-danger" style="margin-right: 5px;"></i>
+                    <strong class="me-auto text-danger">Nevyhovuje</strong>
+                    Entspricht nicht
+                </div>
+            </div>
+        </div>
+        <div class="row pt-2 d-flex">
+            <div class="col">
+                <blockquote class="blockquote mb-0 fs-6">
+                    <p>Číslo vsázky/roštu</p>
+                </blockqoute>
+                <figcaption class="blockquote-footer">
+                    Charge/Rostnummer
+                </figcaption>
+            </div>
+            <div class="col fw-bolder" title="grid">
+                <p>5 46 5 46 </p>
+            </div>
+            <div class="col">
+                <blockquote class="blockquote mb-0 fs-6">
+                    <p>Číslo dávky</p>
+                </blockqoute>
+                <figcaption class="blockquote-footer">
+                    Losnummer
+                </figcaption>
+            </div>
+            <div class="col fw-bolder" title="batch">
+                <p>546 54 6 </p>
+            </div>
+        </div>
+        <div class="row d-flex align-items-center">
+            <div class="col">
+                <blockquote class="blockquote mb-0 fs-6">
+                    <p>Číslo dílu</p>
+                </blockqoute>
+                <figcaption class="blockquote-footer">
+                    Teilnummer
+                </figcaption>
+            </div>
+            <div class="col fw-bolder" title="number">
+                <p>564 65 465 4</p>
+            </div>
+            <div class="col">
+                <blockquote class="blockquote mb-0 fs-6">
+                    <p>Index tavby</p>
+                </blockqoute>
+                <figcaption class="blockquote-footer">
+                    Schmelzeindex
+                </figcaption>
+            </div>
+            <div class="col fw-bolder" title="melt">
+                <p>545 6 4 5 4</p>
+            </div>
+        </div>
+        <div class="row d-flex align-items-center">
+            <div class="col">
+                <blockquote class="blockquote mb-0 fs-6">
+                    <p>Materiál</p>
+                </blockqoute>
+                <figcaption class="blockquote-footer">
+                    Material
+                </figcaption>
+            </div>
+            <div class="col fw-bolder" title="material">
+                <p> 46  6 65 4 6</p>
+            </div>
+            <div class="col">
+                <blockquote class="blockquote mb-0 fs-6">
+                    <p>Počet vzorkú</p>
+                </blockqoute>
+                <figcaption class="blockquote-footer">
+                    Probeteileanzahl
+                </figcaption>
+            </div>
+            <div class="col fw-bolder" title="num">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="row d-flex align-items-center">
+            <div class="col">
+                <blockquote class="blockquote mb-0 fs-6">
+                    <p>Pec</p>
+                </blockqoute>
+                <figcaption class="blockquote-footer">
+                    Ofen
+                </figcaption>
+            </div>
+            <div class="col fw-bolder" title="furnance">
+                <p>5 4 6 54</p>
+            </div>
+            <div class="col">
+                <blockquote class="blockquote mb-0 fs-6">
+                    <p>Poznámka</p>
+                </blockqoute>
+                <figcaption class="blockquote-footer">
+                    Notiz
+                </figcaption>
+            </div>
+            <div class="col fw-bolder" title="note">
+                <p>da</p>
+            </div>
+        </div>
+        <div class="row d-flex align-items-center">
+            <div class="col">
+                <blockquote class="blockquote mb-0 fs-6">
+                    <p>Meno</p>
+                </blockqoute>
+                <figcaption class="blockquote-footer">
+                    Name
+                </figcaption>
+            </div>
+            <div class="col fw-bolder" title="user_name">
+                <p>Anton</p>
+            </div>
+            <div class="col">
+                <blockquote class="blockquote mb-0 fs-6">
+                    <p>Priezvisko</p>
+                </blockqoute>
+                <figcaption class="blockquote-footer">
+                    Nachname
+                </figcaption>
+            </div>
+            <div class="col fw-bolder" title="user_surname">
+                <p>Kukov</p>
+            </div>
+        </div>
+        <div class="row d-flex align-items-center">
+            <div class="col">
+                <blockquote class="blockquote mb-0 fs-6">
+                    <p>Číslo zamnestnance</p>
+                </blockqoute>
+                <figcaption class="blockquote-footer">
+                    Nummer des Mitarbeiters
+                </figcaption>
+            </div>
+            <div class="col fw-bolder" title="id">
+                <p>54 65 4 654</p>
+            </div>
+            <div class="col">
+                <blockquote class="blockquote mb-0 fs-6">
+                    <p>Dátum</p>
+                </blockqoute>
+                <figcaption class="blockquote-footer">
+                    Datum
+                </figcaption>
+            </div>
+            <div class="col fw-bolder">
+                <p>31.01.2022 13:44:27</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Protocol data -->
+
+    <div class="container-sm pt-4">
+        <hr style="border-top: 1px solid #8c8b8b;">
+        <div class="row page-break">
+            <h3>Všechny naměřené hodnoty</h3>
+            <div class="col-4">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h5>Průměrné naměřené hodnoty</h5>
+                    <table class="table table-borderless table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">X</th>
+                                <th scope="col">Y</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">1</th>
+                                <td>4235.142857142857</td>
+                                <td>-1791.0</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></i></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">2</th>
+                                <td>4180.9</td>
+                                <td>-1702.5</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></i></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">3</th>
+                                <td>4236.4</td>
+                                <td>-1782.0</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></i></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">4</th>
+                                <td>4230.1</td>
+                                <td>-1782.4</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></i></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">5</th>
+                                <td>4236.7</td>
+                                <td>-1789.1</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></i></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">6</th>
+                                <td>4185.2</td>
+                                <td>-1716.2</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></i></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">7</th>
+                                <td>4184.9</td>
+                                <td>-1711.7</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></i></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">8</th>
+                                <td>4238.9</td>
+                                <td>-1790.7</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></i></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">9</th>
+                                <td>4230.8</td>
+                                <td>-1785.3</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></i></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">10</th>
+                                <td>4226.8</td>
+                                <td>-1776.4</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></i></td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+                <!-- </div> -->
+            </div>
+            <div class="col-8">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Poloha průměrných hodnot</h6>
+                    <canvas id="scatterChart"></canvas>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Print splitter -->
+    <!-- <div class="page-break"></div> -->
+    <!-- Print splitter -->
+
+    <!-- HODNOTY OSTATNE -->
+    
+
+    <div class="container">
+        
+        <div class="row page-break pt-4">
+            <h4 class="p-4">Výrobek #1 - Naměřené hodnoty</h4>
+            <div class="col-4">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Tabulka naměřených hodnot</h6>
+                    <table class="table table-borderless table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">X</th>
+                                <th scope="col">Y</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">1</th>
+                                <td>4240</td>
+                                <td>-1799</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">2</th>
+                                <td>4238</td>
+                                <td>-1795</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">3</th>
+                                <td></td>
+                                <td></td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">4</th>
+                                <td></td>
+                                <td></td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">5</th>
+                                <td></td>
+                                <td></td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">6</th>
+                                <td>4234</td>
+                                <td>-1790</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">7</th>
+                                <td>4234</td>
+                                <td>-1788</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">8</th>
+                                <td>4233</td>
+                                <td>-1789</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">9</th>
+                                <td>4233</td>
+                                <td>-1788</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">10</th>
+                                <td>4234</td>
+                                <td>-1788</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+                <!-- </div> -->
+            </div>
+            <div class="col-8">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Poloha naměřených hodnot</h6>
+                    <canvas id="scatterChart1"></canvas>
+                <!-- <div> -->
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        
+        <div class="row page-break pt-4">
+            <h4 class="p-4">Výrobek #2 - Naměřené hodnoty</h4>
+            <div class="col-4">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Tabulka naměřených hodnot</h6>
+                    <table class="table table-borderless table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">X</th>
+                                <th scope="col">Y</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">1</th>
+                                <td>4186</td>
+                                <td>-1710</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">2</th>
+                                <td>4183</td>
+                                <td>-1705</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">3</th>
+                                <td>4182</td>
+                                <td>-1703</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">4</th>
+                                <td>4180</td>
+                                <td>-1703</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">5</th>
+                                <td>4180</td>
+                                <td>-1703</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">6</th>
+                                <td>4180</td>
+                                <td>-1702</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">7</th>
+                                <td>4180</td>
+                                <td>-1700</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">8</th>
+                                <td>4179</td>
+                                <td>-1700</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">9</th>
+                                <td>4179</td>
+                                <td>-1701</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">10</th>
+                                <td>4180</td>
+                                <td>-1698</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+                <!-- </div> -->
+            </div>
+            <div class="col-8">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Poloha naměřených hodnot</h6>
+                    <canvas id="scatterChart2"></canvas>
+                <!-- <div> -->
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        
+        <div class="row page-break pt-4">
+            <h4 class="p-4">Výrobek #3 - Naměřené hodnoty</h4>
+            <div class="col-4">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Tabulka naměřených hodnot</h6>
+                    <table class="table table-borderless table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">X</th>
+                                <th scope="col">Y</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">1</th>
+                                <td>4239</td>
+                                <td>-1787</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">2</th>
+                                <td>4238</td>
+                                <td>-1785</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">3</th>
+                                <td>4237</td>
+                                <td>-1785</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">4</th>
+                                <td>4237</td>
+                                <td>-1783</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">5</th>
+                                <td>4237</td>
+                                <td>-1782</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">6</th>
+                                <td>4236</td>
+                                <td>-1781</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">7</th>
+                                <td>4236</td>
+                                <td>-1781</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">8</th>
+                                <td>4235</td>
+                                <td>-1779</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">9</th>
+                                <td>4235</td>
+                                <td>-1778</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">10</th>
+                                <td>4234</td>
+                                <td>-1779</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+                <!-- </div> -->
+            </div>
+            <div class="col-8">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Poloha naměřených hodnot</h6>
+                    <canvas id="scatterChart3"></canvas>
+                <!-- <div> -->
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        
+        <div class="row page-break pt-4">
+            <h4 class="p-4">Výrobek #4 - Naměřené hodnoty</h4>
+            <div class="col-4">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Tabulka naměřených hodnot</h6>
+                    <table class="table table-borderless table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">X</th>
+                                <th scope="col">Y</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">1</th>
+                                <td>4234</td>
+                                <td>-1789</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">2</th>
+                                <td>4232</td>
+                                <td>-1786</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">3</th>
+                                <td>4232</td>
+                                <td>-1784</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">4</th>
+                                <td>4230</td>
+                                <td>-1782</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">5</th>
+                                <td>4230</td>
+                                <td>-1782</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">6</th>
+                                <td>4228</td>
+                                <td>-1780</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">7</th>
+                                <td>4229</td>
+                                <td>-1781</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">8</th>
+                                <td>4229</td>
+                                <td>-1781</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">9</th>
+                                <td>4229</td>
+                                <td>-1780</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">10</th>
+                                <td>4228</td>
+                                <td>-1779</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+                <!-- </div> -->
+            </div>
+            <div class="col-8">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Poloha naměřených hodnot</h6>
+                    <canvas id="scatterChart4"></canvas>
+                <!-- <div> -->
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        
+        <div class="row page-break pt-4">
+            <h4 class="p-4">Výrobek #5 - Naměřené hodnoty</h4>
+            <div class="col-4">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Tabulka naměřených hodnot</h6>
+                    <table class="table table-borderless table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">X</th>
+                                <th scope="col">Y</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">1</th>
+                                <td>4241</td>
+                                <td>-1796</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">2</th>
+                                <td>4239</td>
+                                <td>-1793</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">3</th>
+                                <td>4238</td>
+                                <td>-1791</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">4</th>
+                                <td>4236</td>
+                                <td>-1790</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">5</th>
+                                <td>4237</td>
+                                <td>-1788</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">6</th>
+                                <td>4236</td>
+                                <td>-1788</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">7</th>
+                                <td>4235</td>
+                                <td>-1787</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">8</th>
+                                <td>4235</td>
+                                <td>-1786</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">9</th>
+                                <td>4235</td>
+                                <td>-1786</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">10</th>
+                                <td>4235</td>
+                                <td>-1786</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+                <!-- </div> -->
+            </div>
+            <div class="col-8">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Poloha naměřených hodnot</h6>
+                    <canvas id="scatterChart5"></canvas>
+                <!-- <div> -->
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        
+        <div class="row page-break pt-4">
+            <h4 class="p-4">Výrobek #6 - Naměřené hodnoty</h4>
+            <div class="col-4">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Tabulka naměřených hodnot</h6>
+                    <table class="table table-borderless table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">X</th>
+                                <th scope="col">Y</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">1</th>
+                                <td>4188</td>
+                                <td>-1720</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">2</th>
+                                <td>4187</td>
+                                <td>-1720</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">3</th>
+                                <td>4187</td>
+                                <td>-1718</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">4</th>
+                                <td>4186</td>
+                                <td>-1717</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">5</th>
+                                <td>4186</td>
+                                <td>-1716</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">6</th>
+                                <td>4184</td>
+                                <td>-1716</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">7</th>
+                                <td>4184</td>
+                                <td>-1714</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">8</th>
+                                <td>4184</td>
+                                <td>-1714</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">9</th>
+                                <td>4184</td>
+                                <td>-1713</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">10</th>
+                                <td>4182</td>
+                                <td>-1714</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+                <!-- </div> -->
+            </div>
+            <div class="col-8">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Poloha naměřených hodnot</h6>
+                    <canvas id="scatterChart6"></canvas>
+                <!-- <div> -->
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        
+        <div class="row page-break pt-4">
+            <h4 class="p-4">Výrobek #7 - Naměřené hodnoty</h4>
+            <div class="col-4">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Tabulka naměřených hodnot</h6>
+                    <table class="table table-borderless table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">X</th>
+                                <th scope="col">Y</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">1</th>
+                                <td>4190</td>
+                                <td>-1719</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">2</th>
+                                <td>4187</td>
+                                <td>-1715</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">3</th>
+                                <td>4186</td>
+                                <td>-1714</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">4</th>
+                                <td>4185</td>
+                                <td>-1712</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">5</th>
+                                <td>4185</td>
+                                <td>-1711</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">6</th>
+                                <td>4184</td>
+                                <td>-1710</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">7</th>
+                                <td>4184</td>
+                                <td>-1710</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">8</th>
+                                <td>4183</td>
+                                <td>-1709</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">9</th>
+                                <td>4183</td>
+                                <td>-1708</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-danger">
+                                <th scope="row">10</th>
+                                <td>4182</td>
+                                <td>-1709</td>
+                                <td class="fw-bolder"><i class="bi-x text-danger" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+                <!-- </div> -->
+            </div>
+            <div class="col-8">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Poloha naměřených hodnot</h6>
+                    <canvas id="scatterChart7"></canvas>
+                <!-- <div> -->
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        
+        <div class="row page-break pt-4">
+            <h4 class="p-4">Výrobek #8 - Naměřené hodnoty</h4>
+            <div class="col-4">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Tabulka naměřených hodnot</h6>
+                    <table class="table table-borderless table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">X</th>
+                                <th scope="col">Y</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">1</th>
+                                <td>4243</td>
+                                <td>-1798</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">2</th>
+                                <td>4241</td>
+                                <td>-1796</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">3</th>
+                                <td>4240</td>
+                                <td>-1791</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">4</th>
+                                <td>4239</td>
+                                <td>-1791</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">5</th>
+                                <td>4240</td>
+                                <td>-1790</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">6</th>
+                                <td>4238</td>
+                                <td>-1790</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">7</th>
+                                <td>4237</td>
+                                <td>-1788</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">8</th>
+                                <td>4238</td>
+                                <td>-1788</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">9</th>
+                                <td>4237</td>
+                                <td>-1788</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">10</th>
+                                <td>4236</td>
+                                <td>-1787</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+                <!-- </div> -->
+            </div>
+            <div class="col-8">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Poloha naměřených hodnot</h6>
+                    <canvas id="scatterChart8"></canvas>
+                <!-- <div> -->
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        
+        <div class="row page-break pt-4">
+            <h4 class="p-4">Výrobek #9 - Naměřené hodnoty</h4>
+            <div class="col-4">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Tabulka naměřených hodnot</h6>
+                    <table class="table table-borderless table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">X</th>
+                                <th scope="col">Y</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">1</th>
+                                <td>4235</td>
+                                <td>-1791</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">2</th>
+                                <td>4233</td>
+                                <td>-1790</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">3</th>
+                                <td>4232</td>
+                                <td>-1787</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">4</th>
+                                <td>4232</td>
+                                <td>-1786</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">5</th>
+                                <td>4230</td>
+                                <td>-1785</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">6</th>
+                                <td>4229</td>
+                                <td>-1784</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">7</th>
+                                <td>4231</td>
+                                <td>-1783</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">8</th>
+                                <td>4229</td>
+                                <td>-1783</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">9</th>
+                                <td>4229</td>
+                                <td>-1782</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">10</th>
+                                <td>4228</td>
+                                <td>-1782</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+                <!-- </div> -->
+            </div>
+            <div class="col-8">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Poloha naměřených hodnot</h6>
+                    <canvas id="scatterChart9"></canvas>
+                <!-- <div> -->
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        
+        <div class="row page-break pt-4">
+            <h4 class="p-4">Výrobek #10 - Naměřené hodnoty</h4>
+            <div class="col-4">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Tabulka naměřených hodnot</h6>
+                    <table class="table table-borderless table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">X</th>
+                                <th scope="col">Y</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">1</th>
+                                <td>4231</td>
+                                <td>-1784</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">2</th>
+                                <td>4228</td>
+                                <td>-1780</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">3</th>
+                                <td>4226</td>
+                                <td>-1779</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">4</th>
+                                <td>4227</td>
+                                <td>-1776</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">5</th>
+                                <td>4227</td>
+                                <td>-1776</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">6</th>
+                                <td>4227</td>
+                                <td>-1776</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">7</th>
+                                <td>4226</td>
+                                <td>-1774</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">8</th>
+                                <td>4225</td>
+                                <td>-1773</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">9</th>
+                                <td>4225</td>
+                                <td>-1774</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                            
+                            <tr class="text-success">
+                                <th scope="row">10</th>
+                                <td>4226</td>
+                                <td>-1772</td>
+                                <td class="fw-bolder"><i class="bi-check text-success" style="margin-right: 5px;"></td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+                <!-- </div> -->
+            </div>
+            <div class="col-8">
+                <!-- <div class="bg-light.bg-gradient shadow p-3 mb-5 bg-body rounded-3"> -->
+                    <h6 class="p-2">Poloha naměřených hodnot</h6>
+                    <canvas id="scatterChart10"></canvas>
+                <!-- <div> -->
+            </div>
+        </div>
+    </div>
+    
+    
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+<script>
+    var ctx = document.getElementById("scatterChart")
+    var scatterChart = new Chart(ctx, {
+        type: 'scatter',
+        data: {
+            datasets: [{
+                label: 'Scatter Dataset',
+                data: [ {  x: 4235.142857142857, y: -1791.0  } , {  x: 4180.9, y: -1702.5  } , {  x: 4236.4, y: -1782.0  } , {  x: 4230.1, y: -1782.4  } , {  x: 4236.7, y: -1789.1  } , {  x: 4185.2, y: -1716.2  } , {  x: 4184.9, y: -1711.7  } , {  x: 4238.9, y: -1790.7  } , {  x: 4230.8, y: -1785.3  } , {  x: 4226.8, y: -1776.4  } ,],
+                backgroundColor: 'rgb(0, 128, 13)'
+            }],
+        },
+        options: {
+            scales: {
+                x: [{
+                    type: 'linear',
+                    position: 'bottom',
+                    title: {
+                        display: true,
+                        text: 'X axe',
+                    },
+                }],
+                y: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Y axe',
+                    },
+                }]
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+</script>
+
+
+<script>
+    var ctx1 = document.getElementById("scatterChart1")
+    var scatterChart = new Chart(ctx1, {
+        type: 'scatter',
+        data: {
+            datasets: [{
+                label: 'Scatter Dataset',
+                data: [ {  x: 4240, y: -1799  } , {  x: 4238, y: -1795  } , {  } , {  } , {  } , {  x: 4234, y: -1790  } , {  x: 4234, y: -1788  } , {  x: 4233, y: -1789  } , {  x: 4233, y: -1788  } , {  x: 4234, y: -1788  } ,],
+                backgroundColor: 'rgb(0, 128, 13)'
+            }],
+        },
+        options: {
+            scales: {
+                x: [{
+                    type: 'linear',
+                    position: 'bottom',
+                    title: {
+                        display: true,
+                        text: 'X axe',
+                    },
+                }],
+                y: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Y axe',
+                    },
+                }]
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+</script>
+
+<script>
+    var ctx2 = document.getElementById("scatterChart2")
+    var scatterChart = new Chart(ctx2, {
+        type: 'scatter',
+        data: {
+            datasets: [{
+                label: 'Scatter Dataset',
+                data: [ {  x: 4186, y: -1710  } , {  x: 4183, y: -1705  } , {  x: 4182, y: -1703  } , {  x: 4180, y: -1703  } , {  x: 4180, y: -1703  } , {  x: 4180, y: -1702  } , {  x: 4180, y: -1700  } , {  x: 4179, y: -1700  } , {  x: 4179, y: -1701  } , {  x: 4180, y: -1698  } ,],
+                backgroundColor: 'rgb(0, 128, 13)'
+            }],
+        },
+        options: {
+            scales: {
+                x: [{
+                    type: 'linear',
+                    position: 'bottom',
+                    title: {
+                        display: true,
+                        text: 'X axe',
+                    },
+                }],
+                y: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Y axe',
+                    },
+                }]
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+</script>
+
+<script>
+    var ctx3 = document.getElementById("scatterChart3")
+    var scatterChart = new Chart(ctx3, {
+        type: 'scatter',
+        data: {
+            datasets: [{
+                label: 'Scatter Dataset',
+                data: [ {  x: 4239, y: -1787  } , {  x: 4238, y: -1785  } , {  x: 4237, y: -1785  } , {  x: 4237, y: -1783  } , {  x: 4237, y: -1782  } , {  x: 4236, y: -1781  } , {  x: 4236, y: -1781  } , {  x: 4235, y: -1779  } , {  x: 4235, y: -1778  } , {  x: 4234, y: -1779  } ,],
+                backgroundColor: 'rgb(0, 128, 13)'
+            }],
+        },
+        options: {
+            scales: {
+                x: [{
+                    type: 'linear',
+                    position: 'bottom',
+                    title: {
+                        display: true,
+                        text: 'X axe',
+                    },
+                }],
+                y: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Y axe',
+                    },
+                }]
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+</script>
+
+<script>
+    var ctx4 = document.getElementById("scatterChart4")
+    var scatterChart = new Chart(ctx4, {
+        type: 'scatter',
+        data: {
+            datasets: [{
+                label: 'Scatter Dataset',
+                data: [ {  x: 4234, y: -1789  } , {  x: 4232, y: -1786  } , {  x: 4232, y: -1784  } , {  x: 4230, y: -1782  } , {  x: 4230, y: -1782  } , {  x: 4228, y: -1780  } , {  x: 4229, y: -1781  } , {  x: 4229, y: -1781  } , {  x: 4229, y: -1780  } , {  x: 4228, y: -1779  } ,],
+                backgroundColor: 'rgb(0, 128, 13)'
+            }],
+        },
+        options: {
+            scales: {
+                x: [{
+                    type: 'linear',
+                    position: 'bottom',
+                    title: {
+                        display: true,
+                        text: 'X axe',
+                    },
+                }],
+                y: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Y axe',
+                    },
+                }]
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+</script>
+
+<script>
+    var ctx5 = document.getElementById("scatterChart5")
+    var scatterChart = new Chart(ctx5, {
+        type: 'scatter',
+        data: {
+            datasets: [{
+                label: 'Scatter Dataset',
+                data: [ {  x: 4241, y: -1796  } , {  x: 4239, y: -1793  } , {  x: 4238, y: -1791  } , {  x: 4236, y: -1790  } , {  x: 4237, y: -1788  } , {  x: 4236, y: -1788  } , {  x: 4235, y: -1787  } , {  x: 4235, y: -1786  } , {  x: 4235, y: -1786  } , {  x: 4235, y: -1786  } ,],
+                backgroundColor: 'rgb(0, 128, 13)'
+            }],
+        },
+        options: {
+            scales: {
+                x: [{
+                    type: 'linear',
+                    position: 'bottom',
+                    title: {
+                        display: true,
+                        text: 'X axe',
+                    },
+                }],
+                y: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Y axe',
+                    },
+                }]
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+</script>
+
+<script>
+    var ctx6 = document.getElementById("scatterChart6")
+    var scatterChart = new Chart(ctx6, {
+        type: 'scatter',
+        data: {
+            datasets: [{
+                label: 'Scatter Dataset',
+                data: [ {  x: 4188, y: -1720  } , {  x: 4187, y: -1720  } , {  x: 4187, y: -1718  } , {  x: 4186, y: -1717  } , {  x: 4186, y: -1716  } , {  x: 4184, y: -1716  } , {  x: 4184, y: -1714  } , {  x: 4184, y: -1714  } , {  x: 4184, y: -1713  } , {  x: 4182, y: -1714  } ,],
+                backgroundColor: 'rgb(0, 128, 13)'
+            }],
+        },
+        options: {
+            scales: {
+                x: [{
+                    type: 'linear',
+                    position: 'bottom',
+                    title: {
+                        display: true,
+                        text: 'X axe',
+                    },
+                }],
+                y: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Y axe',
+                    },
+                }]
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+</script>
+
+<script>
+    var ctx7 = document.getElementById("scatterChart7")
+    var scatterChart = new Chart(ctx7, {
+        type: 'scatter',
+        data: {
+            datasets: [{
+                label: 'Scatter Dataset',
+                data: [ {  x: 4190, y: -1719  } , {  x: 4187, y: -1715  } , {  x: 4186, y: -1714  } , {  x: 4185, y: -1712  } , {  x: 4185, y: -1711  } , {  x: 4184, y: -1710  } , {  x: 4184, y: -1710  } , {  x: 4183, y: -1709  } , {  x: 4183, y: -1708  } , {  x: 4182, y: -1709  } ,],
+                backgroundColor: 'rgb(0, 128, 13)'
+            }],
+        },
+        options: {
+            scales: {
+                x: [{
+                    type: 'linear',
+                    position: 'bottom',
+                    title: {
+                        display: true,
+                        text: 'X axe',
+                    },
+                }],
+                y: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Y axe',
+                    },
+                }]
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+</script>
+
+<script>
+    var ctx8 = document.getElementById("scatterChart8")
+    var scatterChart = new Chart(ctx8, {
+        type: 'scatter',
+        data: {
+            datasets: [{
+                label: 'Scatter Dataset',
+                data: [ {  x: 4243, y: -1798  } , {  x: 4241, y: -1796  } , {  x: 4240, y: -1791  } , {  x: 4239, y: -1791  } , {  x: 4240, y: -1790  } , {  x: 4238, y: -1790  } , {  x: 4237, y: -1788  } , {  x: 4238, y: -1788  } , {  x: 4237, y: -1788  } , {  x: 4236, y: -1787  } ,],
+                backgroundColor: 'rgb(0, 128, 13)'
+            }],
+        },
+        options: {
+            scales: {
+                x: [{
+                    type: 'linear',
+                    position: 'bottom',
+                    title: {
+                        display: true,
+                        text: 'X axe',
+                    },
+                }],
+                y: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Y axe',
+                    },
+                }]
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+</script>
+
+<script>
+    var ctx9 = document.getElementById("scatterChart9")
+    var scatterChart = new Chart(ctx9, {
+        type: 'scatter',
+        data: {
+            datasets: [{
+                label: 'Scatter Dataset',
+                data: [ {  x: 4235, y: -1791  } , {  x: 4233, y: -1790  } , {  x: 4232, y: -1787  } , {  x: 4232, y: -1786  } , {  x: 4230, y: -1785  } , {  x: 4229, y: -1784  } , {  x: 4231, y: -1783  } , {  x: 4229, y: -1783  } , {  x: 4229, y: -1782  } , {  x: 4228, y: -1782  } ,],
+                backgroundColor: 'rgb(0, 128, 13)'
+            }],
+        },
+        options: {
+            scales: {
+                x: [{
+                    type: 'linear',
+                    position: 'bottom',
+                    title: {
+                        display: true,
+                        text: 'X axe',
+                    },
+                }],
+                y: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Y axe',
+                    },
+                }]
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+</script>
+
+<script>
+    var ctx10 = document.getElementById("scatterChart10")
+    var scatterChart = new Chart(ctx10, {
+        type: 'scatter',
+        data: {
+            datasets: [{
+                label: 'Scatter Dataset',
+                data: [ {  x: 4231, y: -1784  } , {  x: 4228, y: -1780  } , {  x: 4226, y: -1779  } , {  x: 4227, y: -1776  } , {  x: 4227, y: -1776  } , {  x: 4227, y: -1776  } , {  x: 4226, y: -1774  } , {  x: 4225, y: -1773  } , {  x: 4225, y: -1774  } , {  x: 4226, y: -1772  } ,],
+                backgroundColor: 'rgb(0, 128, 13)'
+            }],
+        },
+        options: {
+            scales: {
+                x: [{
+                    type: 'linear',
+                    position: 'bottom',
+                    title: {
+                        display: true,
+                        text: 'X axe',
+                    },
+                }],
+                y: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Y axe',
+                    },
+                }]
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+</script>
+
+
+
+</html>
